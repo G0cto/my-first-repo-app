@@ -8,5 +8,5 @@ import { Component, signal } from '@angular/core';
   templateUrl: './app.html',
 })
 export class App {
-  title = 'Hello GitHub! This is my first Angular push'
+  title = 'Hello GitHub! This is my first Angular git push'
 }
