@@ -1,23 +1,43 @@
-<h1>Hoenn Gym Leaders</h1>
+<section class="hoenn-section">
 
-@for (gymLeader of trainerService.gymLeaders; track gymLeader.name) {
+    <h1>Hoenn Region</h1>
 
-  <div class="gym-leader">
+    @for (leader of trainerService.gymLeaders; track leader.name) {
 
-    <h2>{{ gymLeader.name }}</h2>
+        <div class="hoenn-leader">
 
-    <h3>Team</h3>
+            <h2>{{ leader.name }}</h2>
 
-    @for (pokemon of gymLeader.team; track pokemon) {
-      <p>{{ pokemon }}</p>
+            <div class="leader-content">
+
+                <div class="leader-image">
+                    <img [src]="leader.image" [alt]="leader.name">
+                </div>
+
+                <div class="leader-details">
+
+                    <h3>Team</h3>
+
+                    <ul>
+                        @for (pokemon of leader.team; track pokemon) {
+                            <li>{{ pokemon }}</li>
+                        }
+                    </ul>
+
+                    <h3>Items</h3>
+
+                    <ul>
+                        @for (item of leader.items; track item) {
+                            <li>{{ item }}</li>
+                        }
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
     }
 
-    <h3>Items</h3>
-
-    @for (item of gymLeader.items; track item) {
-      <p>{{ item }}</p>
-    }
-
-  </div>
-
-}
+</section>
