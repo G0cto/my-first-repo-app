@@ -1,0 +1,55 @@
+<div
+    class="leader-info"
+    [style.background-image]="'linear-gradient(rgba(217, 243, 255, 0.78), rgba(217, 243, 255, 0.78)), url(' + leader.background + ')'"
+>
+
+    <h2>{{ leader.name }}</h2>
+
+    <div class="leader-content">
+
+        <div class="leader-picture">
+
+            <img
+                [src]="leader.image"
+                [alt]="leader.name + ' pixel sprite'"
+            >
+
+        </div>
+
+        <div class="leader-details">
+
+            <p>
+                <strong>Age:</strong>
+                {{ leader.age }}
+            </p>
+
+            <p>
+                <strong>Location:</strong>
+                {{ leader.location }}
+            </p>
+
+            <p>
+                <strong>Pokemon Team:</strong>
+                {{ leader.pokemon }}
+            </p>
+
+            <p>
+                <strong>Gym Badge:</strong>
+                {{ leader.badge }}
+            </p>
+
+        </div>
+
+    </div>
+
+    <button (click)="toggleMotto()">
+        {{ showMotto ? 'Hide Motto' : 'Show Motto' }}
+    </button>
+
+    @if (showMotto) {
+        <p class="motto">
+            "{{ leader.motto }}"
+        </p>
+    }
+
+</div>

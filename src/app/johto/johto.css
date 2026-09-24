@@ -1,0 +1,24 @@
+.johto-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.johto-section h1 {
+    padding: 15px;
+
+    background-color: #173b64;
+    color: white;
+
+    border: 4px solid #0b1e35;
+
+    text-align: center;
+
+    font-family: "Courier New", monospace;
+    font-size: 30px;
+
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    box-shadow: 0 5px 0 #07111d;
+}

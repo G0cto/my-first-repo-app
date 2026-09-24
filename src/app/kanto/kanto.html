@@ -1,0 +1,11 @@
+<section class="kanto-section">
+
+    <h1>Kanto Region</h1>
+
+    @for (leader of gymLeaders; track leader.name) {
+
+        <app-leader-info [leader]="leader"></app-leader-info>
+
+    }
+
+</section>

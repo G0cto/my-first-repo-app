@@ -1,0 +1,199 @@
+.home-section {
+    min-height: calc(100vh - 100px);
+
+    padding: 45px 25px;
+
+    font-family: "Courier New", monospace;
+
+    background-image:
+        linear-gradient(
+            rgba(217, 243, 255, 0.86),
+            rgba(217, 243, 255, 0.86)
+        ),
+        url("https://upload.wikimedia.org/wikipedia/commons/6/60/Johto-Kanto_Map.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+
+/* =========================
+   MAIN TITLE
+   ========================= */
+
+.hero-card {
+    max-width: 900px;
+
+    margin: 0 auto 45px;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    background: white;
+
+    border: 6px solid #102a43;
+
+    box-shadow:
+        8px 8px 0 #102a43,
+        14px 14px 0 #7aa9c2;
+}
+
+
+.subtitle {
+    margin: 0 0 15px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    color: #2f6f9f;
+}
+
+
+.hero-card h1 {
+    margin: 0;
+
+    font-size: 38px;
+
+    font-weight: bold;
+
+    color: #102a43;
+
+    text-shadow: 4px 4px 0 #b8d7e8;
+}
+
+
+.intro {
+    max-width: 650px;
+
+    margin: 25px auto 0;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #29465b;
+}
+
+
+/* =========================
+   REGION CARDS
+   ========================= */
+
+.region-container {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+.region-card {
+    padding: 30px;
+
+    background: white;
+
+    border: 5px solid #102a43;
+
+    box-shadow: 7px 7px 0 #102a43;
+}
+
+
+.region-number {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    background: #d9f3ff;
+
+    border: 3px solid #102a43;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.region-card h2 {
+    margin: 20px 0 15px;
+
+    font-size: 30px;
+
+    color: #2f6f9f;
+
+    letter-spacing: 3px;
+}
+
+
+.region-card p {
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #29465b;
+}
+
+
+/* =========================
+   BOTTOM MESSAGE
+   ========================= */
+
+.start-message {
+    max-width: 1000px;
+
+    margin: 45px auto 0;
+
+    padding: 18px;
+
+    text-align: center;
+
+    background: #163a5f;
+
+    color: white;
+
+    border: 5px solid #102a43;
+
+    box-shadow: 6px 6px 0 #102a43;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   SMALLER SCREENS
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .region-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card h1 {
+        font-size: 28px;
+    }
+
+    .home-section {
+        padding: 30px 15px;
+    }
+
+}

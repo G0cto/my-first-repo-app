@@ -1,12 +1,13 @@
-import { Component, signal } from '@angular/core';
-
+import { Component } from '@angular/core';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  imports: [],
   selector: 'app-root',
-  styleUrl: './app.css',
+  standalone: true,
+  imports: [RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.html',
+  styleUrl: './app.css'
 })
 export class App {
-  title = 'Hello GitHub! This is my first Angular git push'
+
 }
