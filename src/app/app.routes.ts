@@ -17,6 +17,11 @@ export const routes: Routes = [
       import('./johto/johto').then(component => component.Johto)
   },
   {
+    path: "hoenn",
+    loadComponent: () =>
+      import('./hoenn/hoenn').then(component => component.Hoenn)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
